@@ -21,13 +21,26 @@ body {
   }
   width: 100%;
 }
-.content::-webkit-scrollbar {
-  width: 13px;
-}
 
-.content::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: rgb(99, 215, 253);
+@include mainContent("840") {
+  .content::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  .content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(99, 215, 253);
+  }
+}
+@include mainContent("1200") {
+  .content::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  .content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(99, 215, 253);
+  }
 }
 
 //header
